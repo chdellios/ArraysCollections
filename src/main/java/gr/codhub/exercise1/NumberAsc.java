@@ -9,10 +9,10 @@ public class NumberAsc {
 
     public NumberAsc(int n) {
         list = new ArrayList<>();
-        passNumber(n);
+        sortingNumber(n);
     }
 
-    private void passNumber(int n) {
+    private void sortingNumber(int n) {
         for (int i = n; i > 0; i /= 10) {
 
             list.add(i % 10);
@@ -21,7 +21,10 @@ public class NumberAsc {
     }
 
     public void printList() {
+        System.out.println("Number");
+        System.out.println(list);
         Collections.sort(list);
+        System.out.println("Number in Asc order");
         System.out.println(list);
     }
 

@@ -1,5 +1,7 @@
 package gr.codhub.exercise1;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +23,7 @@ public class PrimeNumbers {
         for (int i = 1; i <= nums; i++) {
             list.add(i);
         }
-
+        System.out.println("List with all numbers up to 10");
         System.out.println(list);
         for (int i = 1; i <= nums; i++) {
             if (pr.isPrime(i)) {
@@ -32,6 +34,7 @@ public class PrimeNumbers {
     }
 
     public void printList() {
+        System.out.println("Prime numbers of the list");
         System.out.println(list2);
     }
 }

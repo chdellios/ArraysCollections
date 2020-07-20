@@ -25,7 +25,7 @@ public class DuplicateList {
         System.out.println(list);
 
         list = (ArrayList<String>) list.stream().distinct().collect(Collectors.toList());
-
+        System.out.println("List without duplicates");
         System.out.println(list);
     }
 }
