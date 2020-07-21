@@ -5,9 +5,9 @@ import java.util.Collections;
 
 public class SymmetricString {
 
-    static void addingChars(ArrayList<String> str, String symstring) {
-        for (int i = 0; i < symstring.length(); i++) {
-            str.add(symstring.charAt(i) + "");
+    static void addingChars(ArrayList<String> str, String symString) {
+        for (int i = 0; i < symString.length(); i++) {
+            str.add(symString.charAt(i) + "");
         }
 
     }

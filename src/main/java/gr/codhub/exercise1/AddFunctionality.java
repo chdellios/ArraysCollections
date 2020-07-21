@@ -12,15 +12,15 @@ public class AddFunctionality {
         BigInteger big2 = new BigInteger(String.valueOf(((int) num2)));
         BigInteger result = big1.add(big2);
 //adding BigInteger result in a arraylsit digit by digit
-        ArrayList<Integer> biglist = new ArrayList<>();
+        ArrayList<Integer> bigList = new ArrayList<>();
         BigInteger prev1 = new BigInteger("10");
         while (result.intValue() != 0) {
-            biglist.add(0, result.mod(prev1).intValue());
+            bigList.add(0, result.mod(prev1).intValue());
             result = result.divide(prev1);
         }
 
-        Collections.reverse(biglist);
-        return biglist;
+        Collections.reverse(bigList);
+        return bigList;
     }
 
 }
